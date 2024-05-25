@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <h1 id="title">GeeksforGeeks Survey </h1>
+    <p id="description">Entry to enhance coding skills</p>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h3>Thankyou for helping us for research.</h3>
+      </section>
+      <section>
+                <form id="survey-form" action="https://www.geeksforgeeks.org/html-design-form/">
+        <fieldset>
+          <legend>Name</legend>
+          <input id="name" type="text" required placeholder="Enter your name">
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <input id="email" type="email" placeholder="Enter your email" required >
+        </fieldset>
+        <fieldset>
+          <legend>Age(optional)</legend>
+          <input id="number" type="number" min="16" max="30" placeholder="Age">
+        </fieldset>
+        <label id="name-label">name</label>
+        <label id="email-label">email</label>
+        <label id="number-label">number</label> 
+        <label for="name-label"></label>
+        <label for="email-label"></label>
+        <label for="number-label"></label>
+        <fieldset>
+        <legend>Which option best describes you?</legend>
+        <select id="dropdown">
+          <option>Student</option>
+          <option>Professional</option>
+        </select></fieldset>
+        <fieldset>
+        <legend>Would you recommend<strong> GeeksforGeeks</strong> to a friend?</legend>
+        <label><input type="radio" name="account-type" value="Yes">Yes</label>
+        <label><input type="radio" name="account-type" value="No">No</label>
+        <label><input type="radio" name="account-type" value="Maybe">Maybe</label>
+        </fieldset>
+        <fieldset>
+          <legend>Languages and frameworks known(Check all that apply)</legend>
+          <label><input type="checkbox" value="C">C</label>
+          <label><input type="checkbox" value="C++">C++</label>
+          <labek><input type="checkbox" value="C#">C#</label>
+          <label><input type="checkbox" value="Java">Java</label>
+          <label><input type="checkbox" value="Python">Python</label>
+          <label><input type="checkbox" value="Javascript">Javascript</label>
+          </fieldset>
+         <label>Any comment or suggestions?
+        <textarea name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+            <br>
+            <button id="submit">Submit</button>
+  <input type="submit" value="Submit">
+  </form>
+  </main>
+  </body>
+  </html>
