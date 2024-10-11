@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="header">
+    <h1>css flexbox photo gallery</h1>
+    </header>
+    <div class="gallery">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg" alt="catty">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" alt="catty">
+</div>
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: whitesmoke;
+  }
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: lightcyan;
+    color: #131212;
+    border-bottom: 4px solid lightpink;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
